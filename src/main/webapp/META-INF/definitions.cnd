@@ -1,0 +1,10 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+
+
+[jnt:googleAPIKey] mixin
+extends = jnt:virtualsite
+itemtype=options
+ - googleAPIKey (string) nofulltext
+
+[jnt:googleSearch] > jnt:content, jmix:editorialContent, jmix:siteComponent
